@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid black;/
+}
+.container {
+  text-align: center;
+  margin-top: 100px;
+  /* background-color: black; */
+}
+button {
+  width: 100px;
+  height: 40px;
+}
+.text {
+  /* padding-top: 50px; */
+}
+.first {
+  padding-top: 0px;
+}
+.text {
+  padding-top: 50px;
+  padding-left: 120px;
+  margin: 0 auto;
+}
