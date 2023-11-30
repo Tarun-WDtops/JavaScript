@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop-up alert in Js</title>
+
+    <style>
+      .container {
+        width: 90%;
+        height: 520px;
+        background-color: bisque;
+        border: 10px solid maroon;
+        border-radius: 5px;
+        margin: 0 auto;
+      }
+      img {
+        width: 400px;
+        padding-left: 100px;
+        margin: 52px 0px 0px 270px;
+      }
+      #tarun {
+        width: 400px;
+        height: 40px;
+        text-align: center;
+        background-color: #1b1919;
+        border: 2px solid maroon;
+        color: white;
+        border-radius: 5px;
+      }
+      .text {
+        text-align: center;
+      }
+
+      #tarunn {
+        width: 200px;
+        height: 40px;
+        background-color: #1b1919;
+        border: 2px solid maroon;
+        color: white;
+        border-radius: 5px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="../Image/results.webp" alt="" class="imgage" />
+
+      <div class="text">
+        <input type="text" value="" id="tarun" placeholder="Mark" />
+        <br />
+        <button id="tarunn" onclick="result()">Click</button>
+      </div>
+    </div>
+
+    <script>
+      function result() {
+        let a = document.getElementById("tarun").value;
+
+        if (a >= 33 && a <= 50) {
+          alert("Pass");
+        } else if (a >= 51 && a <= 60) {
+          alert("2nd Grade");
+        } else if (a >= 61 && a <= 70) {
+          alert("1st Grade");
+        } else if (a >= 71 && a <= 80) {
+          alert("Dist");
+        } else if (a >= 81 && a <= 90) {
+          alert("Dist+");
+        } else if (a >= 91 && a <= 100) {
+          alert("Dist++");
+        } else if (a >= 100 && a <= 1000) {
+          alert("Chala Jaa ....");
+        } else {
+          alert("Try Again");
+        }
+      }
+    </script>
+  </body>
+</html>

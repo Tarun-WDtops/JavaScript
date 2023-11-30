@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Converter in Js</title>
+
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        border: 3px solid black;
+        margin: 0 auto;
+      }
+      #converter {
+        width: 492px;
+        height: 70px;
+        background-color: bisque;
+        border-bottom: 3px solid black;
+        /* text-align: center; */
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+      }
+      .batton {
+        height: 423px;
+        background-color: aqua;
+        margin-bottom: 50px;
+      }
+      .batan {
+        text-align: center;
+        padding-top: 30px;
+      }
+      .batann {
+        text-align: center;
+        padding-top: 30px;
+      }
+      .batannn {
+        text-align: center;
+        padding-top: 30px;
+      }
+      .batannnn {
+        text-align: center;
+        padding-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <input
+          type="text"
+          value=""
+          id="converter"
+          placeholder="Text-Converter"
+        />
+      </div>
+
+      <input
+          type="text"
+          value=""
+          id="find-input"
+          placeholder="Find"
+        />
+      </div>
+
+      <input
+          type="text"
+          value=""
+          id="replace-input"
+          placeholder="Replace"
+        />
+      </div>
+
+      <div class="batton">
+        <div class="batan">
+          <button id="Indian" onclick="UpperCase()">Upper Case</button>
+          <button id="Indian" onclick="LowerCase()">Lower Case</button>
+        </div>
+        <div class="batann">
+          <button id="Indian" onclick="Clear()">Clear</button>
+          <button id="Indian" onclick="Trim()">Trim</button>
+        </div>
+        <div class="batannn">
+          <button id="Indian" onclick="characterCount()">
+            Character Count
+          </button>
+          <button id="Indian" onclick="wordsCount()">World Count</button>
+        </div>
+        <div class="batannnn">
+          <button id="Indian" onclick="removeSpace()">Space Remove</button>
+          <button id="Indian" onclick="findAndReplace()">Find & Replace</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function UpperCase() {
+        let a = document.getElementById("converter").value;
+        document.getElementById("converter").value = a.toUpperCase("");
+      }
+
+      function LowerCase() {
+        let a = document.getElementById("converter").value;
+        document.getElementById("converter").value = a.toLowerCase("");
+      }
+
+ function Clear() {
+        document.getElementById("converter").value = "";
+      }
+
+      function Trim() {
+        let a = document.getElementById("converter").value;
+        document.getElementById("converter").value = a.trim("");
+      }
+      function SpaceRemove() {
+        let a = document.getElementById("converter").value;
+        document.getElementById("converter").value = a.Spaceremove("");
+      }
+
+      function characterCount() {
+        let a = document.getElementById("converter").value;
+        document.getElementById("converter").value = a.length;
+      }
+
+      function wordsCount() {
+        let a = document.getElementById("converter").value;
+        document.getElementById("converter").value = a.split(" ").length;
+      }
+
+      function removeSpace() {
+        let a = document.getElementById("converter").value;
+        document.getElementById("converter").value = a.replaceAll(" ", "");
+      }
+
+      function findAndReplace() {
+        let a = document.getElementById("converter").value.toLowerCase();
+        let findStr = document.getElementById("find-input").value.toLowerCase();
+        let replaceStr = document.getElementById("replace-input").value;
+        document.getElementById("converter").value = a.replaceAll(
+          findStr,
+          replaceStr
+        );
+      }
+    </script>
+  </body>
+</html>
