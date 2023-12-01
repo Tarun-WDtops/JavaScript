@@ -9,25 +9,32 @@
       .container {
         width: 500px;
         height: 500px;
-        border: 3px solid black;
+        /* border: 3px solid black; */
         margin: 0 auto;
       }
+      body {
+        background: url(../Image/photo8.jpg) no-repeat center center/cover;
+      }
+
       #converter {
         width: 492px;
         height: 70px;
+        margin-top: 35px;
         background-color: bisque;
-        border-bottom: 3px solid black;
+        border: none;
         /* text-align: center; */
       }
       button {
         width: 200px;
         height: 50px;
         border-radius: 10px;
+        border: none;
       }
       .batton {
         height: 423px;
-        background-color: aqua;
+        /* background-color: aqua; */
         margin-bottom: 50px;
+        border: none;
       }
       .batan {
         text-align: center;
@@ -45,6 +52,32 @@
         text-align: center;
         padding-top: 30px;
       }
+      .input {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .inputt {
+        text-align: center;
+        background-color: bisque;
+        border: none;
+
+        width: 200px;
+        height: 30px;
+
+        /* margin-left: 100px; */
+      }
+      .inputtt {
+        text-align: center;
+        background-color: bisque;
+        border: none;
+
+        width: 200px;
+        height: 30px;
+
+        /* margin-left: 100px; */
+      }
     </style>
   </head>
   <body>
@@ -58,23 +91,25 @@
         />
       </div>
 
-      <input
-          type="text"
-          value=""
-          id="find-input"
-          placeholder="Find"
-        />
-      </div>
-
-      <input
-          type="text"
-          value=""
-          id="replace-input"
-          placeholder="Replace"
-        />
-      </div>
-
       <div class="batton">
+        <div class="input">
+          <input
+            class="inputt"
+            type="text"
+            value=""
+            id="find"
+            placeholder="Find"
+          />
+
+          <input
+            class="inputtt"
+            type="text"
+            value=""
+            id="replace"
+            placeholder="Replace"
+          />
+        </div>
+
         <div class="batan">
           <button id="Indian" onclick="UpperCase()">Upper Case</button>
           <button id="Indian" onclick="LowerCase()">Lower Case</button>
@@ -107,7 +142,7 @@
         document.getElementById("converter").value = a.toLowerCase("");
       }
 
- function Clear() {
+      function Clear() {
         document.getElementById("converter").value = "";
       }
 
@@ -136,12 +171,12 @@
       }
 
       function findAndReplace() {
-        let a = document.getElementById("converter").value.toLowerCase();
-        let findStr = document.getElementById("find-input").value.toLowerCase();
-        let replaceStr = document.getElementById("replace-input").value;
+        let a = document.getElementById("converter").value;
+        let find = document.getElementById("find").value;
+        let replace = document.getElementById("replace").value;
         document.getElementById("converter").value = a.replaceAll(
-          findStr,
-          replaceStr
+          find,
+          replace
         );
       }
     </script>
