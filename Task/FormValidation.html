@@ -58,51 +58,45 @@
   <body>
     <fieldset>
       <legend>Form Validation</legend>
-      <form action="">
+      <form id="rahul">
         <div class="container">
           <div class="test-01">
-            <label for="User Name">User Name :</label>
-            <input type="text" value="" id="text" placeholder="User Name" />
+            <label for="username">User Name :</label>
+            <input type="text" id="text" placeholder="User Name" requied />
             <br />
             <label for="Email-Id">Email-Id :</label> &ensp;
-            <input type="email" value="" id="text1" placeholder="Email-Id" />
+            <input type="email" id="text1" placeholder="Email-Id" required />
             <br />
             <label for="Password">Password :</label> &ensp;
-            <input type="password" value="" id="text2" placeholder="Password" />
+            <input type="password" id="text2" placeholder="Password" required />
             <br />
             <label for="Mobile-Number">Mobile-No :</label>
             <input
               type="text"
-              value=""
               id="text3"
               placeholder="Mobile-Number"
+              required
             />
             <br />
 
-            <button class="Tex" onclick="submit()">Submit</button>
-            <button class="Tarun" onclick="reset()">Reset</button>
+            <button type="submit" class="Tex">Submit</button>
+            <button type="reset" class="Tarun">Reset</button>
           </div>
         </div>
       </form>
     </fieldset>
 
     <script>
-      function submit() {
-        let a = document.getElementById("text").value;
-        document.getElementById("text").value = a.submit;
+      let formEl = document.getElementById("rahul");
+      formEl.addEventListener("submit", onFormSubmit); //EventListner :- HTML documentt ya Element me hone wale event ko listen karta hai
+      // submit = Event name
+      // onFormSumbit = event callback, event fire/trigger hone pr yeh function call hoga
 
-        if ((a = submit)) {
-          alert("PLease fill the required info");
-        }
-      }
+      function onFormSubmit(e) {
+        e.preventDefault();
+        // preventDefault :- Ye form me hone wale refresh ko rokta hai
 
-      function reset() {
-        let a = document.getElementById("text").value;
-        document.getElementById("text").value = a.reset;
-
-        if ((a = reset)) {
-          alert("PLease fill the required info");
-        }
+        alert("Form submitted!");
       }
     </script>
   </body>
