@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation in Js</title>
+    <style>
+      body {
+        background: url(../Image/photo8.jpg) no-repeat center center/cover;
+      }
+      .container {
+        width: 50%;
+        height: 450px;
+        /* border: 5px solid black; */
+        /* margin: auto; */
+        /* text-align: center; */
+        margin: auto;
+      }
+
+      .test-01 {
+        margin: 20px 0px 0px 50px;
+      }
+
+      button {
+        width: 110px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: bisque;
+        border: none;
+        margin-left: 80px;
+      }
+      #text {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: none;
+      }
+      #text1 {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: none;
+      }
+      #text2 {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: none;
+      }
+      #text3 {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 30px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Form Validation</legend>
+      <form action="">
+        <div class="container">
+          <div class="test-01">
+            <label for="User Name">User Name :</label>
+            <input type="text" value="" id="text" placeholder="User Name" />
+            <br />
+            <label for="Email-Id">Email-Id :</label> &ensp;
+            <input type="email" value="" id="text1" placeholder="Email-Id" />
+            <br />
+            <label for="Password">Password :</label> &ensp;
+            <input type="password" value="" id="text2" placeholder="Password" />
+            <br />
+            <label for="Mobile-Number">Mobile-No :</label>
+            <input
+              type="text"
+              value=""
+              id="text3"
+              placeholder="Mobile-Number"
+            />
+            <br />
+
+            <button class="Tex" onclick="submit()">Submit</button>
+            <button class="Tarun" onclick="reset()">Reset</button>
+          </div>
+        </div>
+      </form>
+    </fieldset>
+
+    <script>
+      function submit() {
+        let a = document.getElementById("text").value;
+        document.getElementById("text").value = a.submit;
+
+        if ((a = submit)) {
+          alert("PLease fill the required info");
+        }
+      }
+
+      function reset() {
+        let a = document.getElementById("text").value;
+        document.getElementById("text").value = a.reset;
+
+        if ((a = reset)) {
+          alert("PLease fill the required info");
+        }
+      }
+    </script>
+  </body>
+</html>
