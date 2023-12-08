@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Validation</title>
+    <style>
+      body {
+        background: url(../Image/photo8.jpg) no-repeat center center/cover;
+      }
+      .container {
+        width: 50%;
+        height: 450px;
+        /* border: 5px solid black; */
+        /* margin: auto; */
+        /* text-align: center; */
+        margin: auto;
+      }
+
+      .test-01 {
+        margin: 20px 0px 0px 50px;
+      }
+      #text {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: none;
+      }
+      #text1 {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: none;
+      }
+      #text2 {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 15px;
+        border: none;
+      }
+      #text3 {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 30px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Simple Validation</legend>
+      <form id="rahul">
+        <div class="container">
+          <div class="test-01">
+            <label for="username">User Name :</label>
+            <input
+              type="text"
+              id="text"
+              placeholder="User Name"
+              onblur="handleUserName()"
+            />
+            <span id="empty"></span>
+            <br />
+            <label for="Email-Id">Email-Id :</label> &ensp;
+            <input
+              type="email"
+              id="text1"
+              placeholder="Email-Id"
+              onblur="handleUserEmail()"
+            />
+            <span id="empty1"></span>
+
+            <br />
+            <label for="Password">Password :</label> &ensp;
+            <input
+              type="password"
+              id="text2"
+              placeholder="Password"
+              onblur="handleUserPassword()"
+            />
+            <span id="empty2"></span>
+
+            <br />
+            <label for="Mobile-Number">Mobile-No :</label>
+            <input
+              type="text"
+              id="text3"
+              placeholder="Mobile-Number"
+              onblur="handleUserNumber()"
+            />
+            <span id="empty3"></span>
+
+            <br />
+
+            <!-- <button type="submit" class="Tex">Submit</button>
+              <button type="reset" class="Tarun">Reset</button> -->
+          </div>
+        </div>
+      </form>
+    </fieldset>
+
+    <script>
+      function handleUserName() {
+        let text = document.getElementById("text").value;
+        console.log(text);
+        if (text == "") {
+          document.getElementById("empty").innerText = "Please Enter Your Name";
+          console.log("User Name is Empty");
+        } else {
+          document.getElementById("empty");
+          console.log("User Name is " + text);
+        }
+      }
+    </script>
+  </body>
+</html>

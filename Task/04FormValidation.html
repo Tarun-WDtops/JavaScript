@@ -62,7 +62,7 @@
         <div class="container">
           <div class="test-01">
             <label for="username">User Name :</label>
-            <input type="text" id="text" placeholder="User Name" requied />
+            <input type="text" id="text" placeholder="User Name" required />
             <br />
             <label for="Email-Id">Email-Id :</label> &ensp;
             <input type="email" id="text1" placeholder="Email-Id" required />
@@ -87,10 +87,10 @@
     </fieldset>
 
     <script>
-      let formEl = document.getElementById("rahul");
-      formEl.addEventListener("submit", onFormSubmit); //EventListner :- HTML documentt ya Element me hone wale event ko listen karta hai
-      // submit = Event name
-      // onFormSumbit = event callback, event fire/trigger hone pr yeh function call hoga
+      let form = document.getElementById("rahul");
+      form.addEventListener("submit", onFormSubmit); //EventListner :- HTML documentt ya Element me hone wale event ko listen karta hai
+      // submit = Event name he
+      // onFormSumbit = event callback, hone pr yeh function call hoga
 
       function onFormSubmit(e) {
         e.preventDefault();
