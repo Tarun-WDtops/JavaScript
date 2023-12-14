@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 30%;
+  margin: auto;
+  border: 1px solid lightsteelblue;
+  /* margin-top: 70px; */
+  /* background-color: bisque; */
+}
+img {
+  width: 100%;
+}
+.insta {
+  width: 200px;
+  height: 100px;
+  margin: auto;
+  padding: 30px;
+}
+#data {
+  width: 270px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightsteelblue;
+  /* background-color: #ecf3ff; */
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+#tarun {
+  width: 270px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid lightsteelblue;
+  font-size: 12px;
+}
+.inputs {
+  text-align: center;
+}
+#log-in {
+  width: 270px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #1b74e4;
+  border: none;
+  margin-top: 30px;
+}
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  text-align: center;
+  gap: 20px;
+}
+.facebook {
+  font-size: 20px;
+  color: blue;
+  padding-top: 30px;
+  text-align: center;
+}
+.forget {
+  text-align: center;
+  padding: 20px;
+}
+.nothing {
+  width: 100px;
+  height: 1px;
+  background-color: black;
+}
+section {
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+}
+.section-01 {
+  text-align: center;
+  border: 1px solid lightsteelblue;
+}
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1b74e4;
+}
+.do {
+  font-size: 18px;
+  padding: 15px;
+}
+.section-02 {
+  padding: 10px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+.imges {
+  padding-top: 20px;
+}
+.photo {
+  width: 150px;
+  height: 50px;
+}
