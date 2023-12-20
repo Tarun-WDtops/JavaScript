@@ -37,6 +37,16 @@ img {
 }
 .inputs {
   text-align: center;
+  position: relative;
+}
+#show {
+  /* color: gray; */
+  /* background: none; */
+  /* border: none; */
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 60px;
 }
 #log-in {
   width: 270px;

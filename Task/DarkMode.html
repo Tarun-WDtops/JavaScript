@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #container {
+        width: 100%;
+        height: 559px;
+        text-align: center;
+      }
+      #dark {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: gray;
+      }
+      #light {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: gray;
+      }
+      .para {
+        color: brown;
+        padding-top: 100px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p class="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis porro
+        <br />
+        aliquam mollitia facere. Velit vero eum culpa minus, eaque corrupti nemo
+        <br />
+        est unde optio? Tempore explicabo natus quibusdam numquam a.
+      </p>
+      <button id="dark" onclick="darkMode()">Dark Mode</button>
+      <button id="light" onclick="lightMode()">Light Mode</button>
+    </div>
+
+    <script>
+      function darkMode() {
+        document.getElementById("container").style.backgroundColor = "black";
+      }
+
+      function lightMode() {
+        document.getElementById("container").style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
