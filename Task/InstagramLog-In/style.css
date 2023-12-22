@@ -41,12 +41,13 @@ img {
 }
 #show {
   /* color: gray; */
-  /* background: none; */
-  /* border: none; */
+  background: none;
+  border: none;
   display: none;
   position: absolute;
   top: 60px;
   right: 60px;
+  /* cursor: pointer; */
 }
 #log-in {
   width: 270px;

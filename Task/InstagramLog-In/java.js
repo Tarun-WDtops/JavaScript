@@ -5,8 +5,10 @@ function inputPass() {
 function showPass() {
   document.getElementById("show");
 
-  if (type == "password") {
-    password == "text";
-    document.getElementById("show").innerText = "show";
-  } else type == "text";
+  if (passwordtype == "password") {
+    passwordtype = "text";
+    document.getElementById("show").innerText = "Show";
+  } else passwordtype == "text";
+  passwordtype = "password";
+  document.getElementById("show").innerText = "Hide";
 }
