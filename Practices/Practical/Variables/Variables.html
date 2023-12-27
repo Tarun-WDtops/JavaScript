@@ -17,13 +17,25 @@
       <h2>There are 3 ways to declare a Variable</h2>
 
       <h3>[1] Var</h3>
-      <h3>[2] let</h3>
-      <h3>[3] Const</h3>
+      <p>Var => Var ko Re-declear or Re-assign dono kar sakte hai.</p>
 
-      <p>Examples =></p>
+      <h3>[2] let</h3>
+      <p>
+        Let => Let ko Re-declear nahi kar sakte hai lekin Re-assign kar sakte
+        hai.
+      </p>
+
+      <h3>[3] Const</h3>
+      <p>
+        Const => Const ko Re-declear or Re-assign dono hi nahi kar sakte hai.
+      </p>
 
       <script>
         // Variables in js
+
+        // Rules for Declaration of a variables
+
+        // _ , $ ,  alpha
 
         // 1. Var
 
@@ -40,18 +52,25 @@
 
         let name = "Deepak"; //  Variable declear
         // let name = "Deepak Prajapati";  //Re-Declear is not possible
-        name = "Deepak Prajapati"; //Rw-Assigning is possible
+        name = "Deepak "; //Re-Assigning is possible
         // console.log(name);
 
-        let b = "Gaurav";
-        console.log(b);
+        let b = "Gaurav"; // Variable Declear
+        // let b = "Gaurav Jain"; // Re-declear is not possible
+        b = "Gaurav"; //Re-assigning is possible
+        // console.log(b);
 
         //3. Const
 
         const fav_cricketer = "Mahi"; //variable decleare
         // const fav_cricketer = "Virat"; //Re-Declear is not possible
-        fav_cricketer = "Rohit"; // Re-assigning is not possible
+        // fav_cricketer = "Rohit"; // Re-assigning is not possible
         // console.log(fav_cricketer);
+
+        const fav_teacher = "Chetan Sir"; //Variable declear
+        // const fav_teacher = "Manav Sir"; // Re-declear is not possible
+        fav_teacher = "Neerav Sir"; // Re-assigning is not possible
+        console.log(fav_teacher);
       </script>
     </div>
   </body>
