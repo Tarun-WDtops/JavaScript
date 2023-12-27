@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calculater</h1>
+    <div class="container">
+      <input type="text" value="" id="input1" />
+      <br />
+      <input type="text" value="" id="input2" />
+      <br />
+
+      <button type="button" onclick="add()">+</button>
+      <button type="button" onclick="min()">-</button>
+      <button type="button" onclick="multi()">*</button>
+      <button type="button" onclick="persent()">%</button>
+      <button type="button" onclick="battan()">/</button>
+
+      <br />
+      <input type="text" value="" id="result" />
+    </div>
+
+    <script>
+      function add() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let total = a + b;
+        document.getElementById("result").value = total;
+      }
+      function min() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let total = a - b;
+        document.getElementById("result").value = total;
+      }
+      function multi() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let total = a * b;
+        document.getElementById("result").value = total;
+      }
+      function persent() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let total = a % b;
+        document.getElementById("result").value = total;
+      }
+      function battan() {
+        let a = parseInt(document.getElementById("input1").value);
+        let b = parseInt(document.getElementById("input2").value);
+        let total = a / b;
+        document.getElementById("result").value = total;
+      }
+    </script>
+  </body>
+</html>
