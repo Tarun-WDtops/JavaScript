@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method of Date</title>
+  </head>
+  <body>
+    <h1>Date</h1>
+
+    <script>
+      let Birthday = new Date("03 September 2000 10:30:40");
+      let Tarun = new Date();
+      //   console.log(Birthday.getDate()); // To see Date
+      //   console.log(Birthday.getHours()); // TO see Hour
+      //   console.log(Birthday.getMinutes()); //To see Minutes
+      //   console.log(Birthday.getFullYear()); // To see Year
+      //   console.log(Birthday.getMonth()); // To see Month  ( Ye 0 se count karta hai)
+      //   console.log(Birthday.getDay());       // Nahi samjh aya
+      //   console.log(Birthday.getSeconds());     // To see Second
+      //   console.log(Birthday);
+      Tarun.setTime(Birthday.getTime()); // set time & or isme Birthday variable wali date or time add hua
+      console.log(Tarun);
+    </script>
+  </body>
+</html>
