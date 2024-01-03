@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text-Converter</title>
+  </head>
+  <body>
+    <h1>Text-Converter</h1>
+
+    <div class="container">
+      <div class="input-text">
+        <input type="text" id="converter-text" placeholder="Text-Converter" />
+      </div>
+
+      <div class="buttons">
+        <button type="button" onclick="upperCase()">Upper-Case</button>
+        <button type="button" onclick="lowerCase()">Lower-Case</button>
+        <button type="button" onclick="trim()">Trim</button>
+        <button type="button" onclick="characterCount()">
+          Character Count
+        </button>
+        <button type="button" onclick="wordCount()">Word Count</button>
+        <button type="button" onclick="spaceRemove()">Space Remove</button>
+        <button type="button" onclick="clear()">Clear</button>
+        <button type="button" onclick="findAndReplace()">Find & Replace</button>
+      </div>
+    </div>
+
+    <script>
+      function upperCase() {
+        let a = document.getElementById("converter-text").value;
+        document.getElementById("converter-text").value = a.toUpperCase("");
+      }
+
+      function lowerCase() {
+        let a = document.getElementById("converter-text").value;
+        document.getElementById("converter-text").value = a.toLowerCase("");
+      }
+
+      function trim() {
+        let a = document.getElementById("converter-text").value;
+        document.getElementById("converter-text").value = a.trim("");
+      }
+
+      function characterCount() {
+        let a = document.getElementById("converter-text").value;
+        document.getElementById("converter-text").value = a.length;
+      }
+
+      function wordCount() {
+        let a = document.getElementById("converter-text").value;
+        document.getElementById("converter-text").value = a
+          .trim()
+          .split(/\s+/).length;
+      }
+
+      function spaceRemove() {
+        let a = document.getElementById("converter-text").value;
+        document.getElementById("converter-text").value = a.replaceAll(" ", "");
+      }
+
+      function clear() {
+        let a = (document.getElementById("converter-text").value = "");
+      }
+    </script>
+  </body>
+</html>

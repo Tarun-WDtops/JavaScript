@@ -116,22 +116,20 @@
         </div>
 
         <div class="batan">
-          <button id="Indian" onclick="UpperCase()">Upper Case</button>
-          <button id="Indian" onclick="LowerCase()">Lower Case</button>
+          <button onclick="UpperCase()">Upper Case</button>
+          <button onclick="LowerCase()">Lower Case</button>
         </div>
         <div class="batann">
-          <button id="Indian" onclick="Clear()">Clear</button>
-          <button id="Indian" onclick="Trim()">Trim</button>
+          <button onclick="Clear()">Clear</button>
+          <button onclick="Trim()">Trim</button>
         </div>
         <div class="batannn">
-          <button id="Indian" onclick="characterCount()">
-            Character Count
-          </button>
-          <button id="Indian" onclick="wordsCount()">World Count</button>
+          <button onclick="characterCount()">Character Count</button>
+          <button onclick="wordsCount()">World Count</button>
         </div>
         <div class="batannnn">
-          <button id="Indian" onclick="removeSpace()">Space Remove</button>
-          <button id="Indian" onclick="findAndReplace()">Find & Replace</button>
+          <button onclick="removeSpace()">Space Remove</button>
+          <button onclick="findAndReplace()">Find & Replace</button>
         </div>
       </div>
     </div>
@@ -167,7 +165,7 @@
 
       function wordsCount() {
         let a = document.getElementById("converter").value;
-        document.getElementById("converter").value = a.split(" ").length;
+        document.getElementById("converter").value = a.split("").length;
       }
 
       function removeSpace() {
