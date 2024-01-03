@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical-Operator</title>
+  </head>
+  <body>
+    <h1>Logical-Operator</h1>
+
+    <script>
+      //  &&
+
+      let a = 5 > 3 && 10 > 9; // && Isme di hui dono condition sahi honi chahiye to "True" hoga
+      console.log(a);
+      let b = 10 < 5 && 9 > 5; // && Dono me se ek bhi condition wrong hui to "False" hoga
+      console.log(b);
+      let c = 15 < 10 && 9 < 5; // && Isme dono hi condition wrong hai to "False" hoga
+      console.log(c);
+
+      // ||
+
+      let d = 10 > 9 || 5 > 3; // || Isme dono condition sahi ho to "True" hoga.
+      console.log(d);
+
+      let e = 15 < 9 || 9 < 11; // || Isme koi bhi ek condition bhi agar ek sahi hoti hai to "True" hoga
+      console.log(e);
+
+      let f = 20 < 15 || 15 < 10; // Agar dono condition wrong hai to "False" hoga
+      console.log(f);
+
+      //  ! (Iska mtlb wrong hota hai ye kisi bhi condition ko wrong kahta)
+
+      let g = !(10 > 5); //  Isme ye condition sahi hai pr ! ye wrong bata raha hai to is jagah ye galat hai to "False" hoga
+      console.log(g);
+      let h = !(20 < 10); // Isme ye contion wrong hai or is baar ye ! wrong bata raha he mtlb ye sahi hai to "True" hoga
+      console.log(h);
+    </script>
+  </body>
+</html>
