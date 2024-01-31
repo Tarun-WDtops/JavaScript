@@ -3,12 +3,13 @@ function inputPass() {
 }
 
 function showPass() {
-  document.getElementById("show");
+  let a = document.getElementById("tarun");
 
-  if (passwordtype == "password") {
-    passwordtype = "text";
-    document.getElementById("show").innerText = "Show";
-  } else passwordtype == "text";
-  passwordtype = "password";
-  document.getElementById("show").innerText = "Hide";
+  if (a.type === "password") {
+    document.getElementById("tarun").innerText = "hide";
+    a.type = "text";
+  } else {
+    document.getElementById("tarun").innerText = "show";
+    a.type = "password";
+  }
 }

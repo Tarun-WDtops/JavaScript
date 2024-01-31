@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        background-color: black;
+        justify-content: center;
+      }
+      .container {
+        display: flex;
+      }
+
+      #Tarun {
+        color: black;
+        background-color: white;
+        width: 200px;
+        display: flex;
+      }
+      .date {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <label class="date" for="date">Date</label>
+      <input type="date" id="Tarun" value="" />
+    </div>
+
+    <script>
+      let a = "19-10-2024";
+
+      document.getElementById("Tarun").value;
+      //   console.log(typeof a);
+
+      a = a.split("-").reverse("-");
+
+      console.log(a);
+    </script>
+  </body>
+</html>
