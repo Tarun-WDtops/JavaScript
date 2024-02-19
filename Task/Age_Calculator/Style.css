@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(../../Image/photo8.jpg) no-repeat center/cover;
+}
+.container {
+  width: 500px;
+  background-color: black;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+h1 {
+  color: white;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+#first {
+  width: 400px;
+  height: 25px;
+  text-align: right;
+  border: none;
+  margin-bottom: 5px;
+}
+#second {
+  width: 400px;
+  height: 25px;
+  text-align: right;
+  border: none;
+}
+.input-div {
+  margin-bottom: 10px;
+}
+button {
+  width: 200px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+#result {
+  width: 400px;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
