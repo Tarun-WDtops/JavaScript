@@ -1,0 +1,39 @@
+.container {
+  margin: 10px 400px 50px 400px;
+  background-color: aqua;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.container-wrapper {
+  text-align: center;
+}
+
+#result-input {
+  width: 300px;
+  height: 30px;
+  background-color: #ffff;
+  text-align: right;
+  border: none;
+}
+
+button {
+  width: 76px;
+  height: 70px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.btn-01 {
+  display: flex;
+  width: 303px;
+  margin: 0 auto;
+}
+.lastbtn {
+  height: 56px;
+}
+.last-five {
+  margin-bottom: 50px;
+}

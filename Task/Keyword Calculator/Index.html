@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Assesment</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>jQuery Assesment</h1>
+      <div class="container-wrapper">
+        <div class="inputs">
+          <input type="number" id="result-input" placeholder="Total" />
+        <!-- </div> -->
+        <div class="btn-01">
+          <div class="first">
+            <button type="button" onclick="value(this)" >1</button><br />
+            <button type="button" onclick="value(this)" >4</button><br />
+            <button type="button" onclick="value(this)" >7</button><br />
+            <button type="button" onclick="value(this)" >.</button>
+          </div>
+  
+          <div class="second">
+            <button type="button" onclick="value(this)" >2</button><br />
+            <button type="button" onclick="value(this)" >5</button><br />
+            <button type="button" onclick="value(this)">8</button><br />
+            <button type="button" onclick="value(this)" >0</button>
+          </div>
+  
+          <div class="third">
+            <button type="button" onclick="value(this)">3</button><br />
+            <button type="button" onclick="value(this)" >6</button><br />
+            <button type="button" onclick="value(this)">9</button><br />
+            <button type="button" onclick="equal()" >=</button>
+          </div>
+  
+          <div class="last-five">
+            <button type="button" class="lastbtn" onclick="del()">DEL</button><br />
+            <button type="button" class="lastbtn" onclick="Function(this)">÷</button><br />
+            <button type="button" class="lastbtn" onclick="Function(this)">×</button><br />
+            <button type="button" class="lastbtn" onclick="Function(this)">-</button><br />
+            <button type="button" class="lastbtn" onclick="Function(this)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- javaScript External file here -->
+    <script src="javaSript.js"></script>
+  </body>
+</html>
