@@ -106,3 +106,15 @@ function getfavMovies() {
 
 setfavMovies();
 getfavMovies();
+
+let a = 5; // Create memory for a;
+let b = a; // Pass by vaue ---> copies memory;
+b = 10;
+
+const student = {
+  a: 10,
+  b: 15,
+};
+
+student.a = 15;
+//...........................................
